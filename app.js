@@ -13,7 +13,7 @@ var app = express();
 
 var api = require('./routes/api.route');
 
-var cloud = true;
+var cloud = false;
 
 var mongodbHost = '127.0.0.1';
 var mongodbPort = '27017';

@@ -1,5 +1,5 @@
 var SingleJob = require('../services/singleJob.service');
-
+var ObjectId =  require('mongodb').ObjectID;
 _this = this;
 
 
@@ -51,7 +51,7 @@ exports.updateSingleJob = async function (req,res,next) {
         return res.status(400).json({status: 400., message: "Id must be present"})
     }
 
-    var id = req.body._id;
+    var id = ObjectId(req.body._id);
 
     console.log(req.body);
 
@@ -74,9 +74,11 @@ exports.updateSingleJob = async function (req,res,next) {
 };
 
 exports.removeSingleJob = async function (req,res,next) {
-    var id = req.params.id;
+
+    var id = ObjectId(req.body._id);
 
     try{
+        console.log(id);
         var deleted = await SingleJob.deleteSingleJob(id);
         return res.status(204).json({status:204, message: "Succesfully SingleJob Deleted"})
     }catch(e){

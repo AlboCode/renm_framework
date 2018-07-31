@@ -14,7 +14,6 @@ var SingleJobSchema = new mongoose.Schema({
    isActive: Boolean
 });
 
-SingleJobSchema.plugin(mongoosePaginate);
 const SingleJob = mongoose.model('Singlejob',SingleJobSchema);
 
 module.exports = SingleJob;

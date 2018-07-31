@@ -82,7 +82,10 @@ exports.updateSingleJob = async function (singlejob) {
 exports.deleteSingleJob = async function (id) {
 
     try {
-        var deleted = await SingleJobService.remove({_id:id});
+        // var singleJob = await SingleJobService.find({_id:id});
+        // console.log(singleJob);
+        var deleted = await SingleJobService.findByIdAndRemove(id);
+        console.log(deleted);
         if(deleted.result.n === 0){
             throw Error('Todo could not be deleted')
         }
