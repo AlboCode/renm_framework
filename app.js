@@ -13,7 +13,22 @@ var app = express();
 
 var api = require('./routes/api.route');
 
-var DB_HOST = 'mongodb://127.0.0.1:27017/testingClientDb';
+var cloud = true;
+
+var mongodbHost = '127.0.0.1';
+var mongodbPort = '27017';
+var mongodbDatabase = "testingClientDb"
+var authenticate ='';
+//cloud
+if (cloud) {
+    mongodbHost = 'ds161411.mlab.com';
+    mongodbPort = '61411';
+    authenticate = 'heroku_35d46w8n:1ev079o71mb9fmbu4eteb1n0hn@';
+    mongodbDatabase = "heroku_35d46w8n";
+}
+//mongodb://heroku_35d46w8n:1ev079o71mb9fmbu4eteb1n0hn@ds161411.mlab.com:61411/heroku_35d46w8n
+
+var DB_HOST = 'mongodb://'+authenticate+mongodbHost+':'+mongodbPort + '/' + mongodbDatabase;
 //MongoDB setup
 
 mongoose.Promise = bluebird;
@@ -25,8 +40,9 @@ mongoose.connect(DB_HOST,{ useNewUrlParser: true } )
         }
     )
     .catch(
-        () => {
-          console.log("Error to connect to the Mongo DB host -> " + DB_HOST);
+        (err) => {
+            console.log(err);
+            console.log("Error to connect to the Mongo DB host -> " + DB_HOST);
         }
     );
 
