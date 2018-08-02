@@ -75,12 +75,12 @@ exports.updateSingleJob = async function (req,res,next) {
 
 exports.removeSingleJob = async function (req,res,next) {
 
-    var id = ObjectId(req.body._id);
+    var id = ObjectId(req.params.id);
 
     try{
         console.log(id);
         var deleted = await SingleJob.deleteSingleJob(id);
-        return res.status(204).json({status:204, message: "Succesfully SingleJob Deleted"})
+        return res.status(200).json({status:200, message: "Succesfully SingleJob Deleted"})
     }catch(e){
         return res.status(400).json({status: 400, message: e.message})
     }

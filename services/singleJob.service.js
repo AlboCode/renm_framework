@@ -1,5 +1,5 @@
 var SingleJobService = require('../models/singleJob.model');
-
+var mongo = require('mongodb');
 _this = this;
 
 
@@ -82,9 +82,11 @@ exports.updateSingleJob = async function (singlejob) {
 exports.deleteSingleJob = async function (id) {
 
     try {
-        var deleted = await SingleJobService.remove({_id:id});
-        if(deleted.result.n === 0){
-            throw Error('Todo could not be deleted')
+        console.log(id);
+        var deleted = await SingleJobService.remove({connectorName:id});
+        console.log(deleted);
+        if(deleted.n === 0){
+            throw Error('SingleJob could not be deleted')
         }
         return deleted;
     }catch (e) {
