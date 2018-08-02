@@ -19,7 +19,7 @@ exports.getAllSingleJob =  async function () {
 
 exports.getActivesSingleJobs = async function () {
     try {
-        var singleJob = await SingleJobService.find({"isActive":true});
+        var singleJob = await SingleJobService.find({"isActive":true}).select('_id isActive connectorUUID');
 
         return singleJob;
     }catch (e) {
