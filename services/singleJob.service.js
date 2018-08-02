@@ -82,8 +82,18 @@ exports.updateSingleJob = async function (singlejob) {
 exports.deleteSingleJob = async function (id) {
 
     try {
+        var oldSingleJob = await SingleJobService.findById(id)
+    }catch (e) {
+        throw Error('Error accoured while finding the single job');
+    }
+
+    if(!oldSingleJob){
+        return false;
+    }
+
+    try {
         console.log(id);
-        var deleted = await SingleJobService.remove({connectorName:id});
+        var deleted = await oldSingleJob.remove();
         console.log(deleted);
         if(deleted.n === 0){
             throw Error('SingleJob could not be deleted')
