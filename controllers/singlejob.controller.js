@@ -75,7 +75,7 @@ exports.updateSingleJob = async function (req,res,next) {
 
 exports.removeSingleJob = async function (req,res,next) {
 
-    var id = ObjectId(req.params.id);
+    var id = req.params.id;
 
     try{
         console.log(id);
