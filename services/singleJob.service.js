@@ -74,7 +74,7 @@ exports.updateSingleJob = async function (singlejob) {
         var saveSingleJob = await oldSingleJob.save();
         return saveSingleJob;
     }catch (e) {
-        throw  Error('Error occured while updating singlejob');
+        throw  Error('Error occured while updating singlejob -> ' + e);
     }
 }
 
@@ -91,6 +91,6 @@ exports.deleteSingleJob = async function (id) {
         }
         return deleted;
     }catch (e) {
-        throw Error('Error occured while Deleting singlejob');
+        throw Error('Error occured while Deleting singlejob -> ' + e);
     }
 }
