@@ -13,7 +13,26 @@ var app = express();
 
 var api = require('./routes/api.route');
 
-var cloud = true;
+
+var DIST_DIR = path.join(__dirname, "dist"),
+    PORT = 4001,
+    app = express();
+
+//Serving the files on the dist folder
+app.use(express.static(DIST_DIR));
+
+//Send index.html when the user access the web
+app.get("*", function (req, res) {
+    res.sendFile(path.join(DIST_DIR, "index.html"));
+});
+
+app.listen(PORT);
+
+
+
+var cloud = false;
+
+
 
 var mongodbHost = '127.0.0.1';
 var mongodbPort = '27017';
