@@ -9,9 +9,6 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
     "bluebird": "^3.5.1",
     "cookie-parser": "~1.4.3",
     "css-loader": "^1.0.0",

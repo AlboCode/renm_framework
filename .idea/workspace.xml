@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1be2a4c-5b57-418c-be6e-11d0b9e9b525" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -94,11 +96,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
               <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yarn.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="408" lean-forward="true" selection-start-line="408" selection-end-line="408" />
             </state>
           </provider>
         </entry>
@@ -119,6 +130,7 @@
       <find>app.listen(PORT);</find>
       <find>app.listen</find>
       <find>types</find>
+      <find>babel</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Riccardo Albero\Documents\NodeApp\clientTest\dist</dir>
@@ -153,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/components/Hello.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/yarn.lock" />
       </list>
     </option>
   </component>
@@ -163,6 +176,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -306,12 +322,12 @@
       <workItem from="1533206138333" duration="2659000" />
       <workItem from="1533539526655" duration="6933000" />
       <workItem from="1533628229009" duration="12535000" />
-      <workItem from="1533716394899" duration="3483000" />
+      <workItem from="1533716394899" duration="3894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75697000" />
+    <option name="totallyTimeSpent" value="76108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,15 +343,15 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8230519" visible="true" weight="0.16438356" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8236473" visible="true" weight="0.16438356" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50052685" side_tool="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49947312" visible="true" weight="0.32897604" />
-      <window_info id="npm" order="2" sideWeight="0.17694806" side_tool="true" visible="true" weight="0.16438356" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49947312" weight="0.32897604" />
+      <window_info id="npm" order="2" sideWeight="0.17635271" side_tool="true" visible="true" weight="0.16438356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.456427" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.456427" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39978212" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -648,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -707,6 +716,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="408" lean-forward="true" selection-start-line="408" selection-end-line="408" />
         </state>
       </provider>
     </entry>
