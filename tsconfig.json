@@ -1,22 +1,16 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "lib": ["es6", "dom"],
-    "rootDir": "src",
     "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
-    "moduleResolution": "node",
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "outDir": "./build/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "target": "ES5"
   },
-  "include": [
-    "./src"
-  ],
   "exclude": [
     "node_modules",
-    "build"
+    "typings/browser.d.ts",
+    "typings/browser"
   ]
 }
