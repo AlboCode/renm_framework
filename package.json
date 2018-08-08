@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "dev": "webpack  --watch && yarn start "
+    "dev": "webpack  && yarn start",
+    "install": "yarn",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
