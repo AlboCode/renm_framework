@@ -5,10 +5,10 @@
 **It's a ready to use framework**
 
 ### How to install 
-Run  > yarn install
+> yarn install
 
 ### How to run 
-Run > yarn dev
+> yarn dev
 
 
 # Enjoy! 🙌
